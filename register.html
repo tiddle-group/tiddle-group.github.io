@@ -1,17 +1,6 @@
 <html>
   <head>
-  <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
-  <script>
-    // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyDZ6K93Wsh128lcUD_gdtp7ZW_Wv5lnloE",
-      authDomain: "tiddle-list.firebaseapp.com",
-      databaseURL: "https://tiddle-list.firebaseio.com",
-      projectId: "tiddle-list",
-      storageBucket: "tiddle-list.appspot.com",
-      messagingSenderId: "118752120873"
-    };
-    firebase.initializeApp(config);
+    <script>
     //push user data
     function saveToFirebase() {
       var emailObject = {
@@ -30,7 +19,6 @@
   </head>
   
   <body>
-  
   <div class="container">
     <header class="header">
       Fill form below to register
@@ -46,6 +34,19 @@
   </div> <!-- /container -->
 
 
+  <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDZ6K93Wsh128lcUD_gdtp7ZW_Wv5lnloE",
+      authDomain: "tiddle-list.firebaseapp.com",
+      databaseURL: "https://tiddle-list.firebaseio.com",
+      projectId: "tiddle-list",
+      storageBucket: "tiddle-list.appspot.com",
+      messagingSenderId: "118752120873"
+    };
+    firebase.initializeApp(config);
+    </script>  
 
 
 
