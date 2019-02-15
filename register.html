@@ -1,22 +1,4 @@
 <html>
-  <head>
-    <script>
-    //push user data
-    function saveToFirebase() {
-      var emailObject = {
-          email: document.getElementById("inputEmail").value
-      };
-      alert("entered email: " + document.getElementById("inputEmail").value);
-      firebase.database().ref('subscription-entries').push().set(emailObject)
-          //.then(function(snapshot) {
-          //    success(); // some success method
-         // }, function(error) {
-          //    console.log('error' + error);
-          //    error(); // some error method
-          //});
-      }
-  </script>
-  </head>
   
   <body>
   <div class="container">
@@ -48,6 +30,22 @@
     firebase.initializeApp(config);
     </script>  
 
+    <script>
+    //push user data
+    function saveToFirebase() {
+      var emailObject = {
+          email: document.getElementById("inputEmail").value
+      };
+      alert("entered email: " + document.getElementById("inputEmail").value);
+      firebase.database().ref('subscription-entries').push().set(emailObject)
+          //.then(function(snapshot) {
+          //    success(); // some success method
+         // }, function(error) {
+          //    console.log('error' + error);
+          //    error(); // some error method
+          //});
+      }
+  </script>
 
 
 </body>
