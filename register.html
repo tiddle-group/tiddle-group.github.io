@@ -10,6 +10,43 @@
     <!-- Bootstrap Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+    
+    <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase-firestore.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDZ6K93Wsh128lcUD_gdtp7ZW_Wv5lnloE",
+      authDomain: "tiddle-list.firebaseapp.com",
+      databaseURL: "https://tiddle-list.firebaseio.com",
+      projectId: "tiddle-list",
+      storageBucket: "tiddle-list.appspot.com",
+      messagingSenderId: "118752120873"
+    };
+    firebase.initializeApp(config);
+    // Get a reference to the database service
+    var database = firebase.firestore();
+    //push user data
+    function saveToFirebase() {
+      alert("entered email: " + document.getElementById("inputEmail").value);
+      database.collection("users").add({
+          email: "desperate@a.com"
+      })
+      .then(function(docRef) {
+        console.log("Document written with ID: ", docRef.id);
+      })
+      .catch(function(error) {
+        console.error("Error adding document: ", error);
+      });
+      }
+  </script>
+ 
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    
+  <!-- Bootstrap Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
   </head>
 
   
@@ -29,50 +66,6 @@
   </div> <!-- /container -->
 
 
-<script src="https://www.gstatic.com/firebasejs/5.8.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.8.0/firebase-firestore.js"></script>
-    <script>
-    // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyDZ6K93Wsh128lcUD_gdtp7ZW_Wv5lnloE",
-      authDomain: "tiddle-list.firebaseapp.com",
-      databaseURL: "https://tiddle-list.firebaseio.com",
-      projectId: "tiddle-list",
-      storageBucket: "tiddle-list.appspot.com",
-      messagingSenderId: "118752120873"
-    };
-    firebase.initializeApp(config);
-    </script>
-    <script>
-    // Get a reference to the database service
-    var database = firebase.firestore();
-    //push user data
-    function saveToFirebase() {
-      alert("entered email: " + document.getElementById("inputEmail").value);
-      database.collection("users").add({
-          email: "desperate@a.com"
-      })
-      .then(function(docRef) {
-        console.log("Document written with ID: ", docRef.id);
-      })
-      .catch(function(error) {
-        console.error("Error adding document: ", error);
-      });
-
-          //.then(function(snapshot) {
-          //    success(); // some success method
-         // }, function(error) {
-          //    console.log('error' + error);
-          //    error(); // some error method
-          //});
-      }
-  </script>
- 
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    
-  <!-- Bootstrap Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
   </body>
 </html>
