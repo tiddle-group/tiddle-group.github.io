@@ -16,8 +16,9 @@
   </div> <!-- /container -->
 
 
-  <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
-  <script>
+<script src="https://www.gstatic.com/firebasejs/5.8.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.0/firebase-firestore.js"></script>
+    <script>
     // Initialize Firebase
     var config = {
       apiKey: "AIzaSyDZ6K93Wsh128lcUD_gdtp7ZW_Wv5lnloE",
@@ -29,13 +30,20 @@
     };
     firebase.initializeApp(config);
     // Get a reference to the database service
-    var database = firebase.database();
+    var database = firebase.firestore();
     //push user data
     function saveToFirebase() {
       alert("entered email: " + document.getElementById("inputEmail").value);
-      firebase.database().ref('subscription-entries').push().set({
-        email: document.getElementbyId("inputEmail").value
+      database.collection("users").add({
+          email: document.getElementbyId("inputEmail").value
+      })
+      .then(function(docRef) {
+        console.log("Document written with ID: ", docRef.id);
+      })
+      .catch(function(error) {
+        console.error("Error adding document: ", error);
       });
+
           //.then(function(snapshot) {
           //    success(); // some success method
          // }, function(error) {
