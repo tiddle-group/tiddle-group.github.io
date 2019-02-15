@@ -28,7 +28,7 @@
     var database = firebase.firestore();
     //push user data
     function saveToFirebase() {
-      alert("entered email: " + document.getElementById("inputEmail").value);
+      //alert("entered email: " + document.getElementById("inputEmail").value);
       database.collection("users").add({
           email: "desperate@a.com"
       })
