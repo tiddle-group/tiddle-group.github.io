@@ -30,7 +30,7 @@
     function saveToFirebase() {
       //alert("entered email: " + document.getElementById("inputEmail").value);
       database.collection("users").add({
-          email: "desperate@a.com"
+          email: document.getElementById("inputEmail").value
       })
       .then(function(docRef) {
         console.log("Document written with ID: ", docRef.id);
