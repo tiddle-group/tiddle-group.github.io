@@ -28,16 +28,14 @@
       messagingSenderId: "118752120873"
     };
     firebase.initializeApp(config);
-    </script>  
-
-    <script>
+    // Get a reference to the database service
+    var database = firebase.database();
     //push user data
     function saveToFirebase() {
-      var emailObject = {
-          email: document.getElementById("inputEmail").value
-      };
       alert("entered email: " + document.getElementById("inputEmail").value);
-      firebase.database().ref('subscription-entries').push().set(emailObject)
+      firebase.database().ref('subscription-entries').push().set({
+        email: document.getElementbyId("inputEmail").value
+      });
           //.then(function(snapshot) {
           //    success(); // some success method
          // }, function(error) {
