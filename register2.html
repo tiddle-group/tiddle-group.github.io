@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Hello, World!</title>
+    
+    <!-- Bootstrap Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  </head>
+  <body>
+  
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="text-center">Hello, world!</h1>
+        <p class="text-center">
+          A simple hello could lead to a million things
+        </p>
+      </div>
+      
+      <!-- Message input field -->
+      <div class="row">
+        <div class="col-xs-12 form-group">
+          <input type="text"
+              class="form-control input-lg"
+              id="helloMessageInput"
+              placeholder="Enter your Hello Message here...">
+        </div>
+      </div>
+      
+      <!-- Send button -->
+      <div class="row">
+        <div class="col-xs-12 form-group">
+          <button class="btn btn-default btn-block btn-lg"
+              onClick="sendHelloMessage()">
+              Send
+          </button>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Place to show the latest message from the database -->
+      <h2 class="text-center">Latest Hello Message</h2>
+      <h3 id="helloMessageOutput" class="text-center text-warning">
+        <span class="text-info">Latest message will appear here...</span>
+      </h3>
+
+      <hr>
+
+      <p>
+      <img src="images/RidRKdR4T.png" class="img-responsive" style="margin:0 auto;" alt="Responsive image">
+      </p>
+    </div>
+    
+    <script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDlJzLRr2jkvvHk6ozOOW71OEcyODjf_ak",
+        authDomain: "cicnavi-github-io.firebaseapp.com",
+        databaseURL: "https://cicnavi-github-io.firebaseio.com",
+        projectId: "cicnavi-github-io",
+        storageBucket: "cicnavi-github-io.appspot.com",
+        messagingSenderId: "409780451977"
+      };
+        
+      // Firebase instance.
+      firebase.initializeApp(config);
+      // Database reference to the helloMessage key.
+      var helloMessageReference = firebase.database().ref('helloMessage');
+      // DOM element shortcuts.
+      var helloMessageInput = document.getElementById('helloMessageInput');
+      var helloMessageOutput= document.getElementById('helloMessageOutput');
+      
+      // On every value change, refresh related DOM elements.
+      helloMessageReference.on('value', function (snapshot) {
+        helloMessageOutput.innerText = snapshot.val();
+        helloMessageInput.value = '';
+      });
+      // Function to save the new Hello Message to the database.
+      function sendHelloMessage() {
+        // Variable to hold the message.
+        var helloMessage = '';
+        // If no message is entered, set the sad face.
+        // Else, get the entered message.
+        if (helloMessageInput.value.length == 0) {
+          helloMessage = 'No Hello... :(';
+        }
+        else {
+          helloMessage = helloMessageInput.value;
+        }
+          
+        // Use the database reference to set the new value.
+        helloMessageReference.set(helloMessage);
+      }
+    </script>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    
+    <!-- Bootstrap Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  </body>
+</html>
