@@ -1,4 +1,35 @@
-<body>
+<html>
+  <head>
+  <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDZ6K93Wsh128lcUD_gdtp7ZW_Wv5lnloE",
+      authDomain: "tiddle-list.firebaseapp.com",
+      databaseURL: "https://tiddle-list.firebaseio.com",
+      projectId: "tiddle-list",
+      storageBucket: "tiddle-list.appspot.com",
+      messagingSenderId: "118752120873"
+    };
+    firebase.initializeApp(config);
+    //push user data
+    function saveToFirebase(email) {
+      var emailObject = {
+          email: email
+      };
+
+      firebase.database().ref('subscription-entries').push().set(emailObject)
+          .then(function(snapshot) {
+              success(); // some success method
+          }, function(error) {
+              console.log('error' + error);
+              error(); // some error method
+          });
+      }
+  </script>
+  </head>
+  
+  <body>
   
   <div class="container">
     <header class="header">
@@ -15,33 +46,7 @@
   </div> <!-- /container -->
 
 
-  <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
-  <script>
-    // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyDZ6K93Wsh128lcUD_gdtp7ZW_Wv5lnloE",
-      authDomain: "tiddle-list.firebaseapp.com",
-      databaseURL: "https://tiddle-list.firebaseio.com",
-      projectId: "tiddle-list",
-      storageBucket: "tiddle-list.appspot.com",
-      messagingSenderId: "118752120873"
-    };
-    firebase.initializeApp(config);
-  </script>
-  
-  function saveToFirebase(email) {
-    var emailObject = {
-        email: email
-    };
 
-    firebase.database().ref('subscription-entries').push().set(emailObject)
-        .then(function(snapshot) {
-            success(); // some success method
-        }, function(error) {
-            console.log('error' + error);
-            error(); // some error method
-        });
-      } 
 
 
 </body>
