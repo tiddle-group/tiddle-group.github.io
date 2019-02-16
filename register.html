@@ -42,6 +42,9 @@
     <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase-firestore.js"></script>
     <script>
+    function saveToFirebase() {
+      //alert("entered email: " + document.getElementById("inputEmail").value);
+      console.log("Trying to save in Firebase: ", document.getElementById("inputEmail").value);
     // Initialize Firebase
     var config = {
       apiKey: "AIzaSyDZ6K93Wsh128lcUD_gdtp7ZW_Wv5lnloE",
@@ -55,9 +58,6 @@
     // Get a reference to the database service
     var database = firebase.firestore();
     //push user data
-    function saveToFirebase() {
-      //alert("entered email: " + document.getElementById("inputEmail").value);
-      console.log("Trying to save in Firebase: ", document.getElementById("inputEmail").value);
       database.collection("users").add({
           email: document.getElementById("inputEmail").value,
           name: document.getElementById("name").value,
