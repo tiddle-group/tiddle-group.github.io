@@ -11,7 +11,33 @@
 
     <!-- Bootstrap Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+
+  
+  <body>
+  <div class="container" style="width:500px;padding:20px;">
+    <h1>
+      TIdDLe registration form
+    </h1>
     
+   <form class="form-signin" onsubmit="saveToFirebase()">
+     <h3 class="form-signin-heading">Fill form below to register</h3>
+     You will be included in our mailing list for events and announcements.
+     Your name, email address and interest keywords will be listed on our website.
+     <br><br>
+     <label for="inputEmail" class="sr-only">Email address</label>
+     <input type="email" id="inputEmail" class="form-control" placeholder="Email address" autofocus>
+     <br>
+     <label for="name" class="sr-only">Name: First Last</label>
+     <input type="name" id="name" class="form-control" placeholder="Name: First Last">
+     <br>
+     <label for="Institution" class="sr-only">Institution</label>
+     <input type="Institution" id="Institution" class="form-control" placeholder="Institution">
+     <br>
+     <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+    </form>
+    
+  </div> <!-- /container -->
     
     <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase-firestore.js"></script>
@@ -46,34 +72,11 @@
       }
   </script>
  
-  </head>
-
-  
-  <body>
-  <div class="container" style="width:500px;padding:20px;">
-    <h1>
-      TIdDLe registration form
-    </h1>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     
-   <form class="form-signin" onsubmit="saveToFirebase()">
-     <h3 class="form-signin-heading">Fill form below to register</h3>
-     You will be included in our mailing list for events and announcements.
-     Your name, email address and interest keywords will be listed on our website.
-     <br><br>
-     <label for="inputEmail" class="sr-only">Email address</label>
-     <input type="email" id="inputEmail" class="form-control" placeholder="Email address" autofocus>
-     <br>
-     <label for="name" class="sr-only">Name: First Last</label>
-     <input type="name" id="name" class="form-control" placeholder="Name: First Last">
-     <br>
-     <label for="Institution" class="sr-only">Institution</label>
-     <input type="Institution" id="Institution" class="form-control" placeholder="Institution">
-     <br>
-     <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
-    </form>
-    
-  </div> <!-- /container -->
-
+  <!-- Bootstrap Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 
   </body>
