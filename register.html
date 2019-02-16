@@ -30,8 +30,8 @@
     function saveToFirebase() {
       //alert("entered email: " + document.getElementById("inputEmail").value);
       database.collection("users").add({
-          email: document.getElementById("inputEmail").value
-          name: document.getElementById("name").value
+          email: document.getElementById("inputEmail").value,
+          name: document.getElementById("name").value,
           institution: document.getElementById("Institution").value
       })
       .then(function(docRef) {
