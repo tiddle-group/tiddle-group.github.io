@@ -54,7 +54,7 @@
       TIdDLe registration form
     </h1>
     
-   <form class="form-signin">
+   <form class="form-signin" onsubmit="saveToFirebase()">
      <h3 class="form-signin-heading">Fill form below to register</h3>
      You will be included in our mailing list for events and announcements.
      Your name, email address and interest keywords will be listed on our website.
@@ -68,7 +68,7 @@
      <label for="Institution" class="sr-only">Institution</label>
      <input type="Institution" id="Institution" class="form-control" placeholder="Institution">
      <br>
-     <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="saveToFirebase()">Register</button>
+     <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
     </form>
     
   </div> <!-- /container -->
