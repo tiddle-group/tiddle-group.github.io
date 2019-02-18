@@ -1,3 +1,3 @@
-## Toulouse Interdisciplinary Deep Learning Group (TIdDLe)
+## (old) Toulouse Interdisciplinary Deep Learning Group (TIdDLe)
 
 page coming soon...
