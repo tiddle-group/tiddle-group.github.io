@@ -31,7 +31,9 @@ plugins:
   - jekyll-sitemap
 
 # A list of the pages to display in the navigation bar
-header_pages: index.md, events.md
+header_pages: 
+ - index.html
+ - events.md
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
