@@ -44,6 +44,9 @@ ul.regular {
     padding: 10px 20px;
 }
 
+li.regular {}
+
+li a.regular {}
 
 @media screen and (max-width: 720px) {
   ul {  width: 150px;
