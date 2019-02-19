@@ -20,7 +20,7 @@ ul.menu {
   border-radius: 15px;
 }
 
-li.menu a.menu {
+li.menu a {
   display: block;
   color: #000;
   padding: 12px 8px 12px 16px;
@@ -32,7 +32,7 @@ li.menu a.active {
   color: white;
 }
 
-li.menu a.menu:hover:not(.active) {
+li.menu a:hover:not(.active) {
   background-color: #568;
   color: white;
 }
