@@ -24,6 +24,32 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 <link rel="stylesheet" href="menu_style.css">
+<style>
+  /* Tooltip */
+  .test + .tooltip > .tooltip-inner {
+    background-color: #73AD21; 
+    color: #FFFFFF; 
+    border: 1px solid green; 
+    padding: 15px;
+    font-size: 20px;
+  }
+  /* Tooltip on top */
+  .test + .tooltip.top > .tooltip-arrow {
+    border-top: 5px solid green;
+  }
+  /* Tooltip on bottom */
+  .test + .tooltip.bottom > .tooltip-arrow {
+    border-bottom: 5px solid blue;
+  }
+  /* Tooltip on left */
+  .test + .tooltip.left > .tooltip-arrow {
+    border-left: 5px solid red;
+  }
+  /* Tooltip on right */
+  .test + .tooltip.right > .tooltip-arrow {
+    border-right: 5px solid black;
+  }
+  </style>
 </head>
 <body>
 
@@ -49,7 +75,7 @@
 	<p>
 		<ul style="list-style-type:none;">
 	<li style="list-style-type:none;">We are a group of Toulouse-based researchers, from both academia and industry, 
-		sharing a strong interest in <a href="#" data-toggle="tooltip" title="By Deep Learning we mean:..."><strong>Deep Learning</strong></a> techniques.</li>
+		sharing a strong interest in <a class="test" href="#" data-toggle="tooltip" title="By Deep Learning we mean:..."><strong>Deep Learning</strong></a> techniques.</li>
 	<li style="list-style-type:none;">For a list of group members, see <a href="http://tiddle.epizy.com/member_list.php"><b>Members</b></a> on the left.</li>
 	<li style="list-style-type:none;">We are supported by ANITI, the Toulouse 3IA project. See <a href="sponsors.html"><b>Sponsors</b></a></li>
 		</ul>
