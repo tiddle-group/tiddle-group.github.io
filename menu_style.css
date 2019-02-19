@@ -9,8 +9,8 @@ ul {
   left: 20px;
   height: 100%;
   overflow: auto;
-  font-size: 24px;
-  border-radius: 10px;
+  font: bold 24px Arial, sans-serif;
+  border-radius: 15px;
 }
 
 li a {
