@@ -20,19 +20,19 @@ ul.menu {
   border-radius: 15px;
 }
 
-ul.menu li a {
+li.menu a.menu {
   display: block;
   color: #000;
   padding: 12px 8px 12px 16px;
   text-decoration: none;
 }
 
-ul.menu li a.active {
+li.menu a.active {
   background-color: #4CAF50;
   color: white;
 }
 
-ul.menu li a:hover:not(.active) {
+li.menu a.menu:hover:not(.active) {
   background-color: #568;
   color: white;
 }
