@@ -53,7 +53,7 @@ li.regular {
 	position: initial;
 }
 
-li a.regular {
+li.regular a {
   display: initial;
   color: initial;
   padding: initial;
