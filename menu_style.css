@@ -2,7 +2,7 @@ body {
   margin-left: 320px;
   margin-right: 320px;
 }
-ul {
+ul.menu {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -20,31 +20,31 @@ ul {
   border-radius: 15px;
 }
 
-li a {
+ul.menu li a {
   display: block;
   color: #000;
   padding: 12px 8px 12px 16px;
   text-decoration: none;
 }
 
-li a.active {
+ul.menu li a.active {
   background-color: #4CAF50;
   color: white;
 }
 
-li a:hover:not(.active) {
+ul.menu li a:hover:not(.active) {
   background-color: #568;
   color: white;
 }
 	
-/*need a regular ul style as well*/
+/*need a regular ul style as well
 ul.regular {
     list-style-type: disc;
     color: inherit;
     padding-left: 0px 20px;
     position: initial;
     width: initial;
-    background-color: initial; /*#fafad2;*/
+    background-color: initial; 
     font: inherit;
     border-style: initial;
 }
@@ -69,6 +69,8 @@ ul.regular li a:hover:not(.active) {
   background-color: inherit;
   color: inherit;
 }
+*/
+
 @media screen and (max-width: 720px) {
   ul {  width: 150px;
   top: 20px;
