@@ -20,6 +20,8 @@
 <script type="application/ld+json">
 {"@type":"WebSite","url":"https://tiddle-group.github.io/","headline":"Toulouse Interdisciplinary Deep Learning Group (TIdDLe)","name":"tiddle-group.github.io","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 <link rel="stylesheet" href="menu_style.css">
 </head>
@@ -46,7 +48,8 @@
 	<h2>Who we are</h2>
 	<p>
 		<ul style="list-style-type:none;">
-	<li style="list-style-type:none;">We are a group of Toulouse-based researchers, from both academia and industry, sharing a strong interest in <strong>Deep Learning</strong> techniques.</li>
+	<li style="list-style-type:none;">We are a group of Toulouse-based researchers, from both academia and industry, 
+		sharing a strong interest in <a href="#" data-toggle="tooltip" title="By Deep Learning we mean:..."><strong>Deep Learning</strong></a> techniques.</li>
 	<li style="list-style-type:none;">For a list of group members, see <a href="http://tiddle.epizy.com/member_list.php"><b>Members</b></a> on the left.</li>
 	<li style="list-style-type:none;">We are supported by ANITI, the Toulouse 3IA project. See <a href="sponsors.html"><b>Sponsors</b></a></li>
 		</ul>
@@ -86,7 +89,11 @@
 
       </div>
     </div>
-
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
     
   </body>
 </html>
