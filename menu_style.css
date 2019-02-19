@@ -10,6 +10,7 @@ ul {
   height: 100%;
   overflow: auto;
   font-size: 24px;
+  border-radius: 10px;
 }
 
 li a {
