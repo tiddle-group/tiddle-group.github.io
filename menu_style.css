@@ -41,7 +41,7 @@ li a:hover:not(.active) {
 ul.regular {
     list-style-type:disc;
     color: inherit;
-    padding: 10px 20px;
+    padding-left: 0px 20px;
     position: initial;
     width: initial;
     background-color: initial; /*#fafad2;*/
