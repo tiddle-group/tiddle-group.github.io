@@ -37,35 +37,14 @@ li a:hover:not(.active) {
   color: white;
 }
 	
-/*.sidenav {
-  width: 130px;
-  position: fixed;
-  z-index: 1;
-  top: 20px;
-  left: 10px;
-  background: Gold;
-  overflow-x: hidden;
-  padding: 8px 0;
+/*need a regular ul style as well*/
+ul.regular {
+    list-style-type:disc;
+    color: #000;
+    padding: 10px 20px;
 }
 
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: SteelBlue;
-  display: block;
-}
 
-.sidenav a:hover {
-  color: #064579;
-}
-*/
-/*.main {
-  margin-left: 140px; /* Same width as the sidebar + left position in px */
-  /*font-size: 28px; /* Increased text to enable scrolling */
-/*  padding: 0px 10px;
-}
-*/
 @media screen and (max-width: 720px) {
   ul {  width: 150px;
   top: 20px;
