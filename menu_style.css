@@ -15,8 +15,8 @@ ul {
   overflow: auto;
   font: bold 24px Arial, sans-serif;
   border-style: solid;
-  border-width: thick;
-  border-color: red;
+  border-width: thin;
+  border-color: #cc0000;
   border-radius: 15px;
 }
 
