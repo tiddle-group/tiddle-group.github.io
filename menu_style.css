@@ -53,6 +53,13 @@ li.regular {
 	position: initial;
 }
 
+li a.regular {
+  display: initial;
+  color: initial;
+  padding: initial;
+  text-decoration: initial;
+}
+
 @media screen and (max-width: 720px) {
   ul {  width: 150px;
   top: 20px;
