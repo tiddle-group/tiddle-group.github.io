@@ -49,11 +49,11 @@ ul.regular {
     border-style: initial;
 }
 
-li.regular {
+ul.regular li {
 	position: initial;
 }
 
-li.regular a {
+ul.regular li a {
   display: initial;
   color: initial;
   padding: initial;
