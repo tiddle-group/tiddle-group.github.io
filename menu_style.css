@@ -60,6 +60,15 @@ ul.regular li a {
   text-decoration: initial;
 }
 
+ul.regular li a.active {
+  background-color: initial;
+  color: initial;
+}
+
+ul.regular li a:hover:not(.active) {
+  background-color: initial;
+  color: initial;
+}
 @media screen and (max-width: 720px) {
   ul {  width: 150px;
   top: 20px;
