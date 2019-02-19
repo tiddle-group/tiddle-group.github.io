@@ -39,7 +39,7 @@ li a:hover:not(.active) {
 	
 /*need a regular ul style as well*/
 ul.regular {
-    list-style-type:disc;
+    list-style-type: disc;
     color: inherit;
     padding-left: 0px 20px;
     position: initial;
@@ -55,19 +55,19 @@ ul.regular li {
 
 ul.regular li a {
   display: initial;
-  color: initial;
+  color: inherit;
   padding: initial;
-  text-decoration: initial;
+  text-decoration: inherit;
 }
 
 ul.regular li a.active {
-  background-color: initial;
-  color: initial;
+  background-color: inherit;
+  color: inherit;
 }
 
 ul.regular li a:hover:not(.active) {
-  background-color: initial;
-  color: initial;
+  background-color: inherit;
+  color: inherit;
 }
 @media screen and (max-width: 720px) {
   ul {  width: 150px;
