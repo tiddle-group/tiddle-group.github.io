@@ -40,7 +40,7 @@ li a:hover:not(.active) {
 /*need a regular ul style as well*/
 ul.regular {
     list-style-type:disc;
-    color: #000;
+    color: inherit;
     padding: 10px 20px;
     position: initial;
     width: initial;
