@@ -43,6 +43,10 @@ ul.regular {
     color: #000;
     padding: 10px 20px;
     position: initial;
+    width: initial;
+    background-color: initial; /*#fafad2;*/
+    font: initial;
+    border-style: initial;
 }
 
 li.regular {
