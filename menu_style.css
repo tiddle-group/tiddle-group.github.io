@@ -42,11 +42,12 @@ ul.regular {
     list-style-type:disc;
     color: #000;
     padding: 10px 20px;
+    position: initial;
 }
 
-li.regular {}
-
-li a.regular {}
+li.regular {
+	position: initial;
+}
 
 @media screen and (max-width: 720px) {
   ul {  width: 150px;
