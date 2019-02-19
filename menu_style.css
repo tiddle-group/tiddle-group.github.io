@@ -14,6 +14,9 @@ ul {
   height: 100%;
   overflow: auto;
   font: bold 24px Arial, sans-serif;
+  border-style: solid;
+  border-width: thick;
+  border-color: red;
   border-radius: 15px;
 }
 
@@ -66,7 +69,7 @@ li a:hover:not(.active) {
 @media screen and (max-width: 600px) {
   ul {  width: 150px;
   top: 20px;
-  left: 250px;
+  left: 20px;
   font: 16px Arial, sans-serif;
   border-radius: 15px;
 }
