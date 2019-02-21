@@ -72,7 +72,7 @@ ul.regular li a:hover:not(.active) {
 */
 
 @media screen and (max-width: 720px) {
-  ul {  width: 150px;
+  ul.menu {  width: 150px;
   top: 20px;
   left: 20px;
   font: 16px Arial, sans-serif;
