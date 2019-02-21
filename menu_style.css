@@ -8,7 +8,7 @@ ul.menu {
   padding: 0;
   width: 250px;
   background-color: #ffeac4; /*#fafad2;*/
-  background-image: linear-gradient(160deg, #ffeac4 33%, #ff7060 70%, red 150%);
+  background-image: linear-gradient(160deg, #ffeac4 40%, #ff7060);
   position: fixed;
   top: 40px;
   left: 50px;
