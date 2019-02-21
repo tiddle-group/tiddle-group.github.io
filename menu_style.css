@@ -9,7 +9,7 @@ ul.menu {
   width: 250px;
   background-color: #ffeac4; /*#fafad2;*/
   background-image: linear-gradient(160deg, #ffeac4 50%, #ff7060);
-  box-shadow: 1px 0px 3px 0px #ff7060 inset;
+  box-shadow: 1px 0px 3px 0px #ff7060 inset, 5px 5px 20px 0px #444444;
   position: fixed;
   top: 40px;
   left: 50px;
