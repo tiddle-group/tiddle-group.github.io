@@ -23,6 +23,7 @@ ul.menu {
 li.menu a {
   display: block;
   color: #000;
+  text-shadow: 0 0 4px #FF0000;
   padding: 12px 8px 12px 16px;
   text-decoration: none;
 }
@@ -30,11 +31,13 @@ li.menu a {
 li.menu a.active {
   background-color: #4CAF50;
   color: white;
+  text-shadow: 0 0 3px #0088FF;
 }
 
 li.menu a:hover:not(.active) {
   background-color: #568;
   color: white;
+  text-shadow: 0 0 3px #AA00AA;
 }
 	
 /*need a regular ul style as well
