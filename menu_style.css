@@ -82,7 +82,7 @@ ul.regular li a:hover:not(.active) {
   ul.menu {  width: 200px;
   top: 30px;
   left: 35px;
-  font: 20px Arial, sans-serif;
+  font: bold 20px Arial, sans-serif;
   border-radius: 15px;
 }
   body {  
@@ -95,7 +95,7 @@ ul.regular li a:hover:not(.active) {
   ul.menu {  width: 150px;
   top: 20px;
   left: 20px;
-  font: 16px Arial, sans-serif;
+  font: bold 16px Arial, sans-serif;
   border-radius: 15px;
 }
   body {  
