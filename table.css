@@ -1,0 +1,40 @@
+table{
+    border: 3px solid #555555;
+    
+}
+tr, th, td {
+    border: 1px solid #555555;
+    text-align: left;
+    padding: 1px;
+}
+
+th.time{
+    text-align: center;
+}
+tr.secondary {
+    background-color: #EEF5DB;
+}
+tr.projection {
+    background-color: rgb(154, 221, 157);
+}
+tr.projection th {
+    font-weight: bold;
+}
+
+tr.oral {
+    background-color: rgb(152, 207, 221);
+    font-weight: bold;
+}
+tr.oral th {
+    font-weight: bold;
+}
+
+tr.roundtable {
+    background-color: rgb(243, 174, 240);
+}
+tr.roundtable th {
+    font-weight: bold;
+}
+tr.bottomcell {
+    border-bottom: 3px solid #555555;
+}
